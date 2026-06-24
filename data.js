@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-15-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 26,
-          "tickets": 26
+          "buyers": 28,
+          "tickets": 28
         },
         {
           "tag": "gia-15-4pack",
@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 42,
-      "buyers_total": 31,
-      "total_paid": 1398.05,
+      "tickets_total": 44,
+      "buyers_total": 33,
+      "total_paid": 1448.05,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -126,11 +126,26 @@ window.dashboardData = {
                 "booked": true,
                 "profile": false,
                 "member": false,
-                "tags": "gia-bali, gia-15-guest, attending-next-event",
+                "tags": "gia-15-guest, attending-next-event",
                 "ghl_contact_id": "umGea69lNnnf60myRe1n"
+              },
+              {
+                "role": "Guest",
+                "name": "gary sarco",
+                "email": "gary.sarco@gmail.com",
+                "phone": "+12403052304",
+                "whatsapp": "+12403052304",
+                "attendee_type": "Guest",
+                "booked_by": "hello.gracexuann@gmail.com",
+                "guest_of": "Grace Yeo",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "fb02, gia-15-guest, attending-next-event",
+                "ghl_contact_id": "4dOccRl9PLujeQcgyTRX"
               }
             ],
-            "open_slots": 6
+            "open_slots": 5
           },
           {
             "role": "Buyer",
@@ -306,6 +321,26 @@ window.dashboardData = {
             "member": true,
             "tags": "gia-6-buyer, fulfillment alignment, speaker - bali, gia-8-buyer, gia-9-buyer, archetypequizcompleted, archetype_freedomfortress, mens work, reconnected man, gia-10-buyer, feedback received, founders_breakfast, gia-12-buyer, gia-13-buyer, member, profile-complete, gia-14-buyer, gia-15-buyer, attending-next-event",
             "ghl_contact_id": "0TbaMhgiEPT0fkSoLRSn",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
+            "name": "julia wimmer",
+            "email": "juliaw1996@web.de",
+            "phone": "+4915789660579",
+            "whatsapp": "+4915789660579",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": true,
+            "tags": "gia-15-buyer, attending-next-event, lead - community signup, member",
+            "ghl_contact_id": "uHjdn2xGo1T2tMMDFoTa",
             "tier": "Single",
             "tickets": 1,
             "guest_capacity": 0,
@@ -694,6 +729,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "taryn j young",
+            "email": "tarynyoung91@gmail.com",
+            "phone": "+62466465181",
+            "whatsapp": "+62466465181",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": true,
+            "tags": "speaker - bali, gia-2-buyer, feedback received, gia-11-buyer, women, lead - community signup, member, gia-15-buyer, attending-next-event",
+            "ghl_contact_id": "SpiCyfYXnDPf2A6K44dT",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "theo van dort",
             "email": "theo@brotherhoodblueprint.com",
             "phone": "+447836343458",
@@ -714,10 +769,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 31,
+        "buyer_count": 33,
         "guest_slots_total": 11,
-        "guests_booked": 4,
-        "headcount": 42,
+        "guests_booked": 5,
+        "headcount": 44,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 5
@@ -764,6 +819,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-24T02:45:30.711069+00:00",
-  "last_updated_local": "Wed 24 Jun 2026, 10:45 AM"
+  "last_updated_iso": "2026-06-24T06:43:48.846373+00:00",
+  "last_updated_local": "Wed 24 Jun 2026, 02:43 PM"
 };

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Event Dashboard</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  :root {
+    --bg: #0e0f13;
+    --panel: #161821;
+    --panel-2: #1d2030;
+    --border: #262a3a;
+    --text: #e8eaf2;
+    --muted: #8a90a6;
+    --accent: #7c5cff;
+    --accent-2: #19c37d;
+    --warn: #ffb24a;
+    --error: #ff6f6f;
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+    --radius: 16px;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 32px 64px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    margin: 0;
+  }
+  .stamp { color: var(--muted); font-size: 13px; }
+  .stamp .live-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-2);
+    margin-right: 8px;
+    box-shadow: 0 0 0 0 rgba(25,195,125,.6);
+    animation: pulse 2s ease-out infinite;
+    vertical-align: middle;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(25,195,125,.6); }
+    70% { box-shadow: 0 0 0 10px rgba(25,195,125,0); }
+    100% { box-shadow: 0 0 0 0 rgba(25,195,125,0); }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  @media (max-width: 760px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 28px 24px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    opacity: .9;
+  }
+  .card .label {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+  }
+  .card .name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 6px;
+  }
+  .card .date {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .number {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin: 22px 0 4px;
+    background: linear-gradient(180deg, #fff 0%, #b9b8d3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .number-label {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+  }
+  .stat-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+  .stat-pill {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    flex: 1 1 auto;
+    min-width: 100px;
+  }
+  .stat-pill .v { font-size: 20px; font-weight: 700; line-height: 1.1; }
+  .stat-pill .k { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+  .csv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 16px;
+    transition: background 120ms;
+  }
+  .csv-btn:hover { background: #252938; }
+  .csv-btn .arrow { color: var(--accent-2); font-size: 14px; }
+  .countdown {
+    display: inline-block;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 12px;
+    color: var(--muted);
+    font-size: 12px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  .both {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 28px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .both .left { color: var(--muted); font-size: 14px; }
+  .both .left b { color: var(--text); font-weight: 600; }
+  .both .right { display: flex; align-items: center; gap: 16px; }
+  .both .num { font-size: 32px; font-weight: 700; }
+  .both .csv-btn { margin-top: 0; }
+  footer {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 28px;
+    line-height: 1.6;
+  }
+  footer code, .err code {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  .err {
+    background: rgba(255,111,111,.08);
+    border: 1px solid rgba(255,111,111,.35);
+    color: #ffd2d2;
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .err b { color: var(--error); }
+  .empty {
+    background: rgba(255,178,74,.08);
+    border: 1px solid rgba(255,178,74,.35);
+    color: #ffe4bf;
+    padding: 18px 22px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .empty code {
+    background: rgba(0,0,0,.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+  /* ── Guest roster ── */
+  .roster {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 24px 20px;
+    margin-top: 20px;
+    box-shadow: var(--shadow);
+  }
+  .roster-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px; margin-bottom: 6px;
+  }
+  .roster-head h2 { font-size: 16px; font-weight: 600; margin: 0; }
+  .roster-head .hc { font-size: 13px; color: var(--muted); }
+  .roster-head .hc b { color: var(--text); font-size: 22px; font-weight: 700; }
+  .roster-sub { color: var(--muted); font-size: 12px; margin: 2px 0 16px; }
+  .rtable { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .rtable th {
+    text-align: left; color: var(--muted); font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .8px;
+    padding: 8px 10px; border-bottom: 1px solid var(--border); white-space: nowrap;
+  }
+  .rtable th.c, .rtable td.c { text-align: center; }
+  .rtable td { padding: 9px 10px; border-bottom: 1px solid rgba(38,42,58,.6); vertical-align: middle; }
+  .rtable tr.buyer td { background: rgba(124,92,255,.06); }
+  .rtable tr.buyer td:first-child { border-left: 3px solid var(--accent); }
+  .rtable tr.guest td:first-child { padding-left: 26px; }
+  .rtable tr.open td { color: var(--muted); font-style: italic; }
+  .rtable .pname { font-weight: 600; color: var(--text); }
+  .rtable .pmail { color: var(--muted); font-size: 12px; }
+  .rtable tr.guest .pname { font-weight: 500; }
+  .tick { color: var(--accent-2); font-weight: 700; }
+  .tick.no { color: #3a3f52; font-weight: 400; }
+  .badge {
+    display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: .4px;
+    padding: 2px 7px; border-radius: 999px; border: 1px solid var(--border);
+    color: var(--muted); background: var(--panel-2); text-transform: uppercase;
+  }
+  .badge.buyer { color: #d7ccff; border-color: rgba(124,92,255,.4); }
+  .badge.guest { color: #bfeed8; border-color: rgba(25,195,125,.35); }
+  .roster .csv-btn { margin-top: 16px; }
+  .roster-section-label {
+    color: var(--muted); font-size: 11px; text-transform: uppercase;
+    letter-spacing: 1px; margin: 18px 0 6px;
+  }
+  .rtable td.wa a {
+    color: var(--accent-2); text-decoration: none; font-weight: 600;
+    white-space: nowrap; font-variant-numeric: tabular-nums;
+  }
+  .rtable td.wa a:hover { text-decoration: underline; }
+  .rtable td.wa .none { color: #3a3f52; }
+
+  /* ── Passcode gate ── */
+  #gate {
+    position: fixed; inset: 0; z-index: 9999;
+    background: var(--bg);
+    display: none; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  #gate.show { display: flex; }
+  .gate-box {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: 36px 32px; width: 100%; max-width: 360px; text-align: center;
+  }
+  .gate-box h2 { margin: 0 0 6px; font-size: 20px; font-weight: 600; }
+  .gate-box p { color: var(--muted); font-size: 13px; margin: 0 0 22px; }
+  .gate-box input {
+    width: 100%; padding: 12px 14px; font-size: 16px;
+    background: var(--panel-2); border: 1px solid var(--border);
+    border-radius: 10px; color: var(--text); text-align: center;
+    letter-spacing: 2px; outline: none;
+  }
+  .gate-box input:focus { border-color: var(--accent); }
+  .gate-box button {
+    width: 100%; margin-top: 14px; padding: 12px 14px; font-size: 15px;
+    font-weight: 600; color: #fff; border: none; border-radius: 10px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    cursor: pointer;
+  }
+  .gate-box .gate-err { color: var(--error); font-size: 13px; margin-top: 12px; min-height: 18px; }
+</style>
+</head>
+<body>
+  <div id="gate">
+    <div class="gate-box">
+      <h2>Event Dashboard</h2>
+      <p>Enter the passcode to view the registration list.</p>
+      <input id="gate-input" type="password" inputmode="text" autocomplete="off" placeholder="Passcode" />
+      <button id="gate-btn">Unlock</button>
+      <div class="gate-err" id="gate-err"></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header>
+      <h1>Event Dashboard</h1>
+      <div class="stamp" id="stamp"><span class="live-dot"></span>Loading…</div>
+    </header>
+
+    <div id="content"></div>
+
+    <footer>
+      Auto-refreshes on schedule and publishes to the live site. To update now, double-click <code>refresh.command</code> in the project folder.
+      Edit <code>config.json</code> each month for new event tags.
+    </footer>
+  </div>
+
+<script src="data.js" onerror="window.__noData=true"></script>
+<script>
+(function () {
+  // ─────────────── Passcode gate ───────────────
+  // Lightweight access gate. To change the passcode, edit the line below.
+  // Note: this hides the dashboard UI; it is not strong encryption.
+  const PASSCODE = 'parallaxx25';
+
+  if (sessionStorage.getItem('dash_ok') !== '1') {
+    const gate = document.getElementById('gate');
+    const input = document.getElementById('gate-input');
+    const btn = document.getElementById('gate-btn');
+    const err = document.getElementById('gate-err');
+    gate.classList.add('show');
+    setTimeout(() => input.focus(), 50);
+    const submit = () => {
+      if (input.value === PASSCODE) {
+        sessionStorage.setItem('dash_ok', '1');
+        gate.classList.remove('show');
+        location.reload();
+      } else {
+        err.textContent = 'Incorrect passcode.';
+        input.value = '';
+        input.focus();
+      }
+    };
+    btn.addEventListener('click', submit);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') submit(); });
+    return;
+  }
+
+  const stamp = document.getElementById('stamp');
+  const content = document.getElementById('content');
+  const data = window.dashboardData;
+
+  if (window.__noData || !data) {
+    stamp.innerHTML = '<span class="live-dot" style="background:#ffb24a"></span>No data yet';
+    content.innerHTML = '<div class="empty">' +
+      '<b>No data yet.</b> Open this folder and double-click <code>refresh.command</code> ' +
+      'to pull the first set of counts from GHL and Stripe, then reload this page.</div>';
+    return;
+  }
+
+  stamp.innerHTML = '<span class="live-dot"></span>Last updated ' + escapeHtml(data.last_updated_local || '—');
+
+  let html = '';
+
+  if (data.errors && data.errors.length) {
+    html += '<div class="err"><b>Some pulls failed.</b><br>' +
+      data.errors.map(e => escapeHtml(String(e).slice(0, 300))).join('<br>') + '</div>';
+  }
+
+  html += '<div class="grid">';
+  for (const ev of (data.events || [])) {
+    const tickets = numOrNull(ev.tickets_total);
+    const buyers = numOrNull(ev.buyers_total);
+    const paid = numOrNull(ev.total_paid);
+    const tiers = ev.tiers || [];
+    const bothBuyers = numOrNull(ev.both_buyers);
+
+    const headlineVal = tickets !== null ? tickets : '—';
+    const headlineLabel = (tickets !== null && buyers !== null && tickets !== buyers)
+      ? 'Tickets (across ' + buyers + ' buyers)'
+      : 'Attendees';
+
+    const days = daysUntil(ev.date);
+    const cd = days === null ? ''
+      : days > 0 ? '<span class="countdown">in ' + days + ' day' + (days === 1 ? '' : 's') + '</span>'
+      : days === 0 ? '<span class="countdown">today</span>'
+      : '<span class="countdown">' + Math.abs(days) + ' day' + (Math.abs(days) === 1 ? '' : 's') + ' ago</span>';
+
+    let pills = '';
+    // One pill per tier with buyers > 0 (or always show Single)
+    for (const t of tiers) {
+      if (t.buyers > 0 || t.label === 'Single') {
+        const sub = (t.tickets_per_contact > 1)
+          ? t.label + ' (' + t.tickets_per_contact + ' ea)'
+          : t.label;
+        pills += pill(t.tickets, sub);
+      }
+    }
+    const manualAdj = numOrNull(ev.manual_adjustment_total);
+    if (manualAdj !== null && manualAdj > 0) pills += pill('+' + manualAdj, 'Manual adj.');
+    const ovDelta = numOrNull(ev.guest_slot_override_delta);
+    if (ovDelta !== null && ovDelta > 0) pills += pill('+' + ovDelta, 'Extra slots');
+    if (bothBuyers !== null && bothBuyers > 0) pills += pill(bothBuyers, 'Bundle (Both)');
+    if (paid !== null && paid > 0) pills += pill('$' + paid.toFixed(0), 'Collected');
+
+    let csvBtn = '';
+    if (ev.csv) {
+      csvBtn = '<a class="csv-btn" href="' + escapeHtml(ev.csv) + '" download>'
+            + '<span>Download attendee list</span>'
+            + '<span class="arrow">→</span></a>';
+    }
+
+    html += '<div class="card">' +
+      '<div class="label">Event</div>' +
+      '<div class="name">' + escapeHtml(ev.name) + cd + '</div>' +
+      '<div class="date">' + formatDate(ev.date) + (ev.tag ? ' &middot; tag: <code>' + escapeHtml(ev.tag) + '</code>' : '') + '</div>' +
+      '<div class="number">' + headlineVal + '</div>' +
+      '<div class="number-label">' + headlineLabel + '</div>' +
+      '<div class="stat-row">' + pills + '</div>' +
+      csvBtn +
+    '</div>';
+  }
+  html += '</div>';
+
+  // Guest roster(s) — for events that book guests (e.g. GIA 4-packs)
+  for (const ev of (data.events || [])) {
+    if (ev.roster && (ev.roster.buyers || ev.roster.unassigned_guests)) {
+      html += renderRoster(ev);
+    }
+  }
+
+  // Bundle / both events row
+  const bothCount = numOrNull(data.both_count);
+  const bothPaid = numOrNull(data.both_total_paid);
+
+  if (bothCount !== null) {
+    let bothCsv = '';
+    if (data.both_csv) {
+      bothCsv = '<a class="csv-btn" href="' + escapeHtml(data.both_csv) + '" download>'
+            + '<span>Download bundle list</span>'
+            + '<span class="arrow">→</span></a>';
+    }
+    const paidNote = (bothPaid !== null && bothPaid > 0) ? ' &middot; $' + bothPaid.toFixed(0) + ' collected' : '';
+
+    html += '<div class="both">' +
+      '<div class="left">Attending <b>both</b> events ' +
+        (data.both_tag ? '&middot; tag <code>' + escapeHtml(data.both_tag) + '</code>' : '') +
+        paidNote +
+      '</div>' +
+      '<div class="right">' +
+        '<div class="num">' + bothCount + '</div>' +
+        '<span style="color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1.2px">attendees</span>' +
+        bothCsv +
+      '</div>' +
+    '</div>';
+  }
+
+  content.innerHTML = html;
+
+  function pill(v, k) {
+    return '<div class="stat-pill"><div class="v">' + v + '</div><div class="k">' + k + '</div></div>';
+  }
+  function tk(b) { return b ? '<span class="tick">✓</span>' : '<span class="tick no">–</span>'; }
+  function waCell(p) {
+    const raw = p.whatsapp || p.phone || '';
+    const digits = String(raw).replace(/[^0-9]/g, '');
+    if (!digits) return '<td class="wa"><span class="none">–</span></td>';
+    return '<td class="wa"><a href="https://wa.me/' + digits + '" target="_blank" rel="noopener" title="Message on WhatsApp">'
+      + escapeHtml(raw) + '</a></td>';
+  }
+  function personCells(p) {
+    return '<td><span class="pname">' + escapeHtml(p.name || '') + '</span>'
+      + (p.email ? '<br><span class="pmail">' + escapeHtml(p.email) + '</span>' : '') + '</td>'
+      + waCell(p)
+      + '<td class="c">' + tk(p.booked) + '</td>'
+      + '<td class="c">' + tk(p.profile) + '</td>'
+      + '<td class="c">' + tk(p.member) + '</td>';
+  }
+  function renderRoster(ev) {
+    const r = ev.roster;
+    const buyers = r.buyers || [];
+    const unassigned = r.unassigned_guests || [];
+
+    let rows = '';
+    for (const b of buyers) {
+      const tier = b.tier ? ' <span class="badge buyer">' + escapeHtml(b.tier) + '</span>' : '';
+      const ovBadge = b.slot_override
+        ? ' <span class="badge" style="color:var(--warn);border-color:rgba(255,178,74,.4)" title="'
+          + escapeHtml(b.slot_override_note || '') + '">' + (b.guest_capacity || 0) + ' slots (override)</span>'
+        : '';
+      rows += '<tr class="buyer"><td><span class="pname">' + escapeHtml(b.name || '') + '</span>' + tier + ovBadge
+        + (b.email ? '<br><span class="pmail">' + escapeHtml(b.email) + '</span>' : '') + '</td>'
+        + waCell(b)
+        + '<td class="c">' + tk(b.booked) + '</td><td class="c">' + tk(b.profile) + '</td><td class="c">' + tk(b.member) + '</td></tr>';
+      for (const g of (b.guests || [])) {
+        rows += '<tr class="guest">' + personCells(g) + '</tr>';
+      }
+      for (let i = 0; i < (b.open_slots || 0); i++) {
+        rows += '<tr class="guest open"><td>(open guest slot)</td><td class="wa"><span class="none">–</span></td><td class="c">–</td><td class="c">–</td><td class="c">–</td></tr>';
+      }
+    }
+
+    let unassignedHtml = '';
+    if (unassigned.length) {
+      unassignedHtml = '<div class="roster-section-label">Guests not matched to a buyer (' + unassigned.length + ')</div>'
+        + '<table class="rtable"><thead><tr><th>Guest</th><th>WhatsApp</th><th class="c">Booked</th><th class="c">Profile</th><th class="c">Member</th></tr></thead><tbody>';
+      for (const g of unassigned) unassignedHtml += '<tr class="guest">' + personCells(g) + '</tr>';
+      unassignedHtml += '</tbody></table>';
+    }
+
+    let csvBtn = '';
+    if (ev.csv) {
+      csvBtn = '<a class="csv-btn" href="' + escapeHtml(ev.csv) + '" download>'
+        + '<span>Download check-in list</span><span class="arrow">→</span></a>';
+    }
+
+    const slots = numOrNull(r.guest_slots_total) || 0;
+    const booked = numOrNull(r.guests_booked) || 0;
+    const adj = numOrNull(r.manual_adjustment_total) || 0;
+    const adjList = r.manual_adjustments || [];
+    const adjFormula = adj > 0 ? ' + ' + adj + ' manual' : '';
+    let adjNote = '';
+    if (adj > 0) {
+      const labels = adjList.map(a => escapeHtml(a.label || ('+' + a.seats))).join('; ');
+      adjNote = '<div class="roster-sub" style="color:var(--warn)">incl. +' + adj
+        + ' manual seat adjustment' + (labels ? ' — ' + labels : '') + '</div>';
+    }
+    const ovDelta = numOrNull(r.override_delta) || 0;
+    let ovNote = '';
+    if (ovDelta > 0) {
+      const ovBuyers = (r.buyers || []).filter(b => b.slot_override)
+        .map(b => escapeHtml(b.name) + ' (' + (b.guest_capacity || 0) + ' slots)').join('; ');
+      ovNote = '<div class="roster-sub" style="color:var(--warn)">custom guest-slot capacity'
+        + (ovBuyers ? ' — ' + ovBuyers : '') + '</div>';
+    }
+
+    return '<div class="roster">'
+      + '<div class="roster-head"><h2>' + escapeHtml(ev.name) + ' — Check-in Roster</h2>'
+      + '<div class="hc"><b>' + (r.headcount != null ? r.headcount : '—') + '</b> total headcount</div></div>'
+      + '<div class="roster-sub">' + (r.buyer_count || 0) + ' buyers + ' + slots + ' guest slots'
+      + ' &middot; ' + booked + ' guest' + (booked === 1 ? '' : 's') + ' booked in so far'
+      + ' &middot; headcount = buyers + (4-packs × 3)' + adjFormula + ' &middot; the download is the venue check-in list</div>'
+      + adjNote
+      + ovNote
+      + '<table class="rtable"><thead><tr><th>Buyer / Guest</th><th>WhatsApp</th><th class="c">Booked</th><th class="c">Profile</th><th class="c">Member</th></tr></thead><tbody>'
+      + rows + '</tbody></table>'
+      + unassignedHtml
+      + csvBtn
+      + '</div>';
+  }
+  function numOrNull(v) {
+    return (v === null || v === undefined) ? null : v;
+  }
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  function daysUntil(iso) {
+    if (!iso) return null;
+    const d = new Date(iso + 'T00:00:00');
+    if (isNaN(d.getTime())) return null;
+    const today = new Date();
+    today.setHours(0,0,0,0);
+    return Math.round((d - today) / 86400000);
+  }
+  function formatDate(iso) {
+    if (!iso) return '';
+    const d = new Date(iso + 'T00:00:00');
+    if (isNaN(d.getTime())) return iso;
+    return d.toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# ── Never publish: secrets & operational files ──
+secrets.json
+stripe-cache.json
+*.log
+.DS_Store
+__pycache__/
+
+# Keep backend code & config local (not served on the public site)
+config.json
+refresh.py
+*.command
+*.plist
+
+# ── Published to GitHub Pages (intentionally NOT ignored) ──
+# index.html, data.js, *.csv, CNAME, README.md

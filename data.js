@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-15-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 28,
-          "tickets": 28
+          "buyers": 29,
+          "tickets": 29
         },
         {
           "tag": "gia-15-4pack",
@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 44,
-      "buyers_total": 33,
-      "total_paid": 1448.05,
+      "tickets_total": 45,
+      "buyers_total": 34,
+      "total_paid": 1469.6,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -46,6 +46,21 @@ window.dashboardData = {
             "tickets": 4,
             "guest_capacity": 3,
             "guests": [
+              {
+                "role": "Guest",
+                "name": "camie del carpio",
+                "email": "camiedelcarpio2@gmail.com",
+                "phone": "+6282266446155",
+                "whatsapp": "+6282266446155",
+                "attendee_type": "Guest",
+                "booked_by": "amyschwab2013@gmail.com",
+                "guest_of": "Amy Schwab",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "gia-15-guest, attending-next-event",
+                "ghl_contact_id": "rzo9y9O9T8TgGzmoUxDS"
+              },
               {
                 "role": "Guest",
                 "name": "monika purba",
@@ -77,7 +92,7 @@ window.dashboardData = {
                 "ghl_contact_id": "7HDunMyvA7WVpGjRdOP5"
               }
             ],
-            "open_slots": 1
+            "open_slots": 0
           },
           {
             "role": "Buyer",
@@ -337,9 +352,9 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": true,
-            "tags": "gia-15-buyer, attending-next-event, lead - community signup, member",
+            "tags": "gia-15-buyer, attending-next-event, lead - community signup, member, profile-complete",
             "ghl_contact_id": "uHjdn2xGo1T2tMMDFoTa",
             "tier": "Single",
             "tickets": 1,
@@ -349,7 +364,7 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
-            "name": "july jalnaz",
+            "name": "july achumbre",
             "email": "julyanne.achumbre@gmail.com",
             "phone": "+639982452937",
             "whatsapp": "+639982452937",
@@ -357,9 +372,9 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": true,
-            "tags": "gia-15-buyer, attending-next-event, lead - community signup, member",
+            "tags": "gia-15-buyer, attending-next-event, lead - community signup, member, profile-complete",
             "ghl_contact_id": "ZT3n9wXKjgreSbOXvVap",
             "tier": "Single",
             "tickets": 1,
@@ -541,6 +556,26 @@ window.dashboardData = {
             "member": true,
             "tags": "unsubscribed, gia-12-buyer, speaker - bali, gia-14-buyer, lead - community signup, member, gia-15-buyer, attending-next-event",
             "ghl_contact_id": "MprWUkAoitmPFb9dCFuZ",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
+            "name": "nikol toncheva",
+            "email": "nikol.toncheva15@gmail.com",
+            "phone": "+6282147387279",
+            "whatsapp": "+6282147387279",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": true,
+            "tags": "gia-15-buyer, attending-next-event, lead - community signup, member",
+            "ghl_contact_id": "Qp8RL9VcKL0p6mNym2wq",
             "tier": "Single",
             "tickets": 1,
             "guest_capacity": 0,
@@ -769,10 +804,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 33,
+        "buyer_count": 34,
         "guest_slots_total": 11,
-        "guests_booked": 5,
-        "headcount": 44,
+        "guests_booked": 6,
+        "headcount": 45,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 5
@@ -819,6 +854,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-24T06:43:48.846373+00:00",
-  "last_updated_local": "Wed 24 Jun 2026, 02:43 PM"
+  "last_updated_iso": "2026-06-24T23:59:25.470775+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 07:59 AM"
 };

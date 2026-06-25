@@ -874,6 +874,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-25T03:09:57.739457+00:00",
-  "last_updated_local": "Thu 25 Jun 2026, 11:09 AM"
+  "last_updated_iso": "2026-06-25T03:13:30.303828+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 11:13 AM"
 };

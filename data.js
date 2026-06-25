@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-15-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 29,
-          "tickets": 29
+          "buyers": 30,
+          "tickets": 30
         },
         {
           "tag": "gia-15-4pack",
@@ -22,8 +22,8 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 45,
-      "buyers_total": 34,
+      "tickets_total": 46,
+      "buyers_total": 35,
       "total_paid": 1469.6,
       "csv": "gia-attendees.csv",
       "roster": {
@@ -86,9 +86,9 @@ window.dashboardData = {
                 "booked_by": "amyschwab2013@gmail.com",
                 "guest_of": "Amy Schwab",
                 "booked": true,
-                "profile": false,
+                "profile": true,
                 "member": true,
-                "tags": "gia-4-buyer, speaker - bali, gia-7-buyer, gia-9-buyer, archetypequizcompleted, archetype_freedomfortress, email bounced, feedback 2, founders_breakfast, gia-12-buyer, gia-14-buyer, gia-15-guest, attending-next-event, lead - community signup, member",
+                "tags": "gia-4-buyer, speaker - bali, gia-7-buyer, gia-9-buyer, archetypequizcompleted, archetype_freedomfortress, email bounced, feedback 2, founders_breakfast, gia-12-buyer, gia-14-buyer, gia-15-guest, attending-next-event, lead - community signup, member, profile-complete",
                 "ghl_contact_id": "7HDunMyvA7WVpGjRdOP5"
               }
             ],
@@ -131,7 +131,7 @@ window.dashboardData = {
               },
               {
                 "role": "Guest",
-                "name": "sher y",
+                "name": "sher s",
                 "email": "imsuperiknow@gmail.com",
                 "phone": "+6287874687491",
                 "whatsapp": "+6287874687491",
@@ -139,9 +139,9 @@ window.dashboardData = {
                 "booked_by": "hello.gracexuann@gmail.com",
                 "guest_of": "Grace Yeo",
                 "booked": true,
-                "profile": false,
+                "profile": true,
                 "member": false,
-                "tags": "gia-15-guest, attending-next-event",
+                "tags": "gia-15-guest, attending-next-event, profile-complete",
                 "ghl_contact_id": "umGea69lNnnf60myRe1n"
               },
               {
@@ -232,9 +232,9 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": true,
-            "tags": "gia-14-buyer, fb03, gia-15-buyer, attending-next-event, lead - community signup, member",
+            "tags": "gia-14-buyer, fb03, gia-15-buyer, attending-next-event, lead - community signup, member, profile-complete",
             "ghl_contact_id": "n9FuVQ255rn0xJ6uX2ZK",
             "tier": "Single",
             "tickets": 1,
@@ -404,6 +404,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "laura-marie casey",
+            "email": "lauramarie.casey@icloud.com",
+            "phone": "+34663984740",
+            "whatsapp": "+34663984740",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": true,
+            "tags": "women, gia-15-buyer, attending-next-event, lead - community signup, member",
+            "ghl_contact_id": "Hg4uwCurcBWOEnewG40a",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "lukas seerup",
             "email": "lukas@wearespace.dk",
             "phone": "+628113703215",
@@ -524,7 +544,7 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
-            "name": "mitch o'callaghan",
+            "name": "mitchell o'callaghan",
             "email": "mitchhaydenocallaghan@gmail.com",
             "phone": "+447794118543",
             "whatsapp": "+447794118543",
@@ -532,9 +552,9 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": false,
-            "tags": "gia-15-buyer, attending-next-event",
+            "tags": "gia-15-buyer, attending-next-event, profile-complete",
             "ghl_contact_id": "cyIDTYuwKgvWw8NUPuGX",
             "tier": "Single",
             "tickets": 1,
@@ -625,7 +645,7 @@ window.dashboardData = {
           {
             "role": "Buyer",
             "name": "robert hangu",
-            "email": "robert@nextops.agency",
+            "email": "robert.hangu@gmail.com",
             "phone": "+34602441540",
             "whatsapp": "+34602441540",
             "attendee_type": "",
@@ -804,10 +824,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 34,
+        "buyer_count": 35,
         "guest_slots_total": 11,
         "guests_booked": 6,
-        "headcount": 45,
+        "headcount": 46,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 5
@@ -854,6 +874,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-24T23:59:25.470775+00:00",
-  "last_updated_local": "Thu 25 Jun 2026, 07:59 AM"
+  "last_updated_iso": "2026-06-25T03:09:57.739457+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 11:09 AM"
 };

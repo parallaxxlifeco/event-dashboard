@@ -24,7 +24,7 @@ window.dashboardData = {
       "both_buyers": 3,
       "tickets_total": 52,
       "buyers_total": 40,
-      "total_paid": 1536.6,
+      "total_paid": 1488.6,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -116,23 +116,68 @@ window.dashboardData = {
             "guests": [
               {
                 "role": "Guest",
+                "name": "eli tham",
+                "email": "test@testing.com",
+                "phone": "+64275259987",
+                "whatsapp": "+64275259987",
+                "attendee_type": "Guest",
+                "booked_by": "hello.gracexuann@gmail.com",
+                "guest_of": "Grace Yeo",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "gia-15-guest, attending-next-event",
+                "ghl_contact_id": "tz4HCDySnaKvuhnbEGUZ"
+              },
+              {
+                "role": "Guest",
+                "name": "mike logan",
+                "email": "mikeloganfit@gmail.com",
+                "phone": "+16263929667",
+                "whatsapp": "+16263929667",
+                "attendee_type": "Guest",
+                "booked_by": "hello.gracexuann@gmail.com",
+                "guest_of": "Grace Yeo",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "gia-15-guest, attending-next-event",
+                "ghl_contact_id": "77jvHrRhsFryqw3endX4"
+              },
+              {
+                "role": "Guest",
+                "name": "rama -",
+                "email": "ramadita.adi.pratama@gmail.com",
+                "phone": "+6285935399333",
+                "whatsapp": "+6285935399333",
+                "attendee_type": "Guest",
+                "booked_by": "hello.gracexuann@gmail.com",
+                "guest_of": "Grace Yeo",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "gia-15-guest, attending-next-event",
+                "ghl_contact_id": "fvhKBRRLRH1JcL2eVl1p"
+              },
+              {
+                "role": "Guest",
                 "name": "gary sarco",
-                "email": "gary@stellarvoiceagents.com",
-                "phone": "+12403052304",
-                "whatsapp": "+12403052304",
+                "email": "gary.sarco@gmail.com",
+                "phone": "+622402429859",
+                "whatsapp": "+622402429859",
                 "attendee_type": "Guest",
                 "booked_by": "hello.gracexuann@gmail.com",
                 "guest_of": "Grace Yeo",
                 "booked": true,
                 "profile": true,
-                "member": false,
-                "tags": "profile-complete, fb02, attending-next-event, gia-15-guest",
+                "member": true,
+                "tags": "profile-complete, fb02, attending-next-event, gia-15-guest, member",
                 "ghl_contact_id": "gnYWngtVbCGCzPkLHl8Q"
               },
               {
                 "role": "Guest",
-                "name": "eli tham",
-                "email": "jessiechiang77@gmail.com",
+                "name": "jesse chiang",
+                "email": "hello@jessiechiang.com",
                 "phone": "+19497489629",
                 "whatsapp": "+19497489629",
                 "attendee_type": "Guest",
@@ -160,7 +205,7 @@ window.dashboardData = {
                 "ghl_contact_id": "umGea69lNnnf60myRe1n"
               }
             ],
-            "open_slots": 5
+            "open_slots": 2
           },
           {
             "role": "Buyer",
@@ -421,7 +466,7 @@ window.dashboardData = {
           {
             "role": "Buyer",
             "name": "job baltes",
-            "email": "jobbaltes@icloud.com",
+            "email": "baltesjob@gmail.com",
             "phone": "+31637219162",
             "whatsapp": "+31637219162",
             "attendee_type": "",
@@ -942,7 +987,7 @@ window.dashboardData = {
         "unassigned_guests": [],
         "buyer_count": 40,
         "guest_slots_total": 12,
-        "guests_booked": 7,
+        "guests_booked": 10,
         "headcount": 52,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
@@ -976,7 +1021,7 @@ window.dashboardData = {
       "both_buyers": 3,
       "tickets_total": 5,
       "buyers_total": 5,
-      "total_paid": 201.5,
+      "total_paid": 153.5,
       "csv": "fb-attendees.csv",
       "roster": null,
       "manual_adjustment_total": 0,
@@ -986,10 +1031,10 @@ window.dashboardData = {
   ],
   "both_tag": "gia15+fb04",
   "both_count": 3,
-  "both_total_paid": 149.0,
+  "both_total_paid": 101.0,
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-25T04:46:45.912885+00:00",
-  "last_updated_local": "Thu 25 Jun 2026, 12:46 PM"
+  "last_updated_iso": "2026-06-25T05:09:28.447867+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 01:09 PM"
 };

@@ -24,7 +24,7 @@ window.dashboardData = {
       "both_buyers": 3,
       "tickets_total": 54,
       "buyers_total": 42,
-      "total_paid": 1538.6,
+      "total_paid": 1563.6,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -86,9 +86,9 @@ window.dashboardData = {
                 "booked_by": "amyschwab2013@gmail.com",
                 "guest_of": "Amy Schwab",
                 "booked": true,
-                "profile": true,
-                "member": true,
-                "tags": "gia-4-buyer, speaker - bali, gia-7-buyer, gia-9-buyer, archetypequizcompleted, archetype_freedomfortress, email bounced, feedback 2, founders_breakfast, gia-12-buyer, gia-14-buyer, gia-15-guest, attending-next-event, lead - community signup, member, profile-complete",
+                "profile": false,
+                "member": false,
+                "tags": "gia-4-buyer, speaker - bali, gia-7-buyer, gia-9-buyer, archetypequizcompleted, archetype_freedomfortress, email bounced, feedback 2, founders_breakfast, gia-12-buyer, gia-14-buyer, gia-15-guest, attending-next-event, lead - community signup",
                 "ghl_contact_id": "7HDunMyvA7WVpGjRdOP5"
               }
             ],
@@ -206,7 +206,7 @@ window.dashboardData = {
               },
               {
                 "role": "Guest",
-                "name": "jesse chiang",
+                "name": "jessie chiang",
                 "email": "hello@jessiechiang.com",
                 "phone": "+19497489629",
                 "whatsapp": "+19497489629",
@@ -214,9 +214,9 @@ window.dashboardData = {
                 "booked_by": "hello.gracexuann@gmail.com",
                 "guest_of": "Grace Yeo",
                 "booked": true,
-                "profile": false,
+                "profile": true,
                 "member": false,
-                "tags": "gia-15-guest, attending-next-event",
+                "tags": "gia-15-guest, attending-next-event, profile-complete",
                 "ghl_contact_id": "g8ZDFWj00ORu4nyiv0F7"
               },
               {
@@ -235,26 +235,6 @@ window.dashboardData = {
                 "ghl_contact_id": "umGea69lNnnf60myRe1n"
               }
             ],
-            "open_slots": 0
-          },
-          {
-            "role": "Buyer",
-            "name": "anca busoi",
-            "email": "ancabusoi@gmail.com",
-            "phone": "+393890581028",
-            "whatsapp": "+393890581028",
-            "attendee_type": "",
-            "booked_by": "",
-            "guest_of": "",
-            "booked": true,
-            "profile": true,
-            "member": true,
-            "tags": "speaker - bali, gia-3-buyer, gia-8-buyer, gia-10-buyer, gia-13-buyer, women, gia-15-buyer, attending-next-event, lead - community signup, member, profile-complete",
-            "ghl_contact_id": "1kTvYUNAbszE7siybuEF",
-            "tier": "Single",
-            "tickets": 1,
-            "guest_capacity": 0,
-            "guests": [],
             "open_slots": 0
           },
           {
@@ -1035,6 +1015,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "teodora dimitrova koleva",
+            "email": "teodora.koleva7b@gmail.com",
+            "phone": "+359894858540",
+            "whatsapp": "+359894858540",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": false,
+            "tags": "gia-15-buyer, attending-next-event",
+            "ghl_contact_id": "1VpC9WjYgb4HJ5yisYKe",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "theo van dort",
             "email": "theo@brotherhoodblueprint.com",
             "phone": "+447836343458",
@@ -1105,6 +1105,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-25T06:44:05.585323+00:00",
-  "last_updated_local": "Thu 25 Jun 2026, 02:44 PM"
+  "last_updated_iso": "2026-06-25T07:40:52.955773+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 03:40 PM"
 };

@@ -417,6 +417,8 @@
     if (manualAdj !== null && manualAdj > 0) pills += pill('+' + manualAdj, 'Manual adj.');
     const ovDelta = numOrNull(ev.guest_slot_override_delta);
     if (ovDelta !== null && ovDelta > 0) pills += pill('+' + ovDelta, 'Extra slots');
+    const extraTix = numOrNull(ev.extra_tickets_total);
+    if (extraTix !== null && extraTix > 0) pills += pill('+' + extraTix, 'Extra tickets');
     if (bothBuyers !== null && bothBuyers > 0) pills += pill(bothBuyers, 'Bundle (Both)');
     if (paid !== null && paid > 0) pills += pill('$' + paid.toFixed(0), 'Collected');
 

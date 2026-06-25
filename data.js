@@ -22,7 +22,7 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 54,
+      "tickets_total": 55,
       "buyers_total": 42,
       "total_paid": 1563.6,
       "csv": "gia-attendees.csv",
@@ -1028,9 +1028,25 @@ window.dashboardData = {
             "tags": "gia-15-buyer, attending-next-event",
             "ghl_contact_id": "1VpC9WjYgb4HJ5yisYKe",
             "tier": "Single",
-            "tickets": 1,
-            "guest_capacity": 0,
-            "guests": [],
+            "tickets": 2,
+            "guest_capacity": 1,
+            "guests": [
+              {
+                "role": "Guest",
+                "name": "teodora dimitrova koleva (+1)",
+                "email": "",
+                "phone": "",
+                "whatsapp": "",
+                "attendee_type": "",
+                "booked_by": "",
+                "guest_of": "teodora dimitrova koleva",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "extra-ticket",
+                "ghl_contact_id": ""
+              }
+            ],
             "open_slots": 0
           },
           {
@@ -1056,16 +1072,17 @@ window.dashboardData = {
         ],
         "unassigned_guests": [],
         "buyer_count": 42,
-        "guest_slots_total": 12,
-        "guests_booked": 12,
-        "headcount": 54,
+        "guest_slots_total": 13,
+        "guests_booked": 13,
+        "headcount": 55,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 5
       },
       "manual_adjustment_total": 0,
       "manual_adjustments": [],
-      "guest_slot_override_delta": 5
+      "guest_slot_override_delta": 5,
+      "extra_tickets_total": 2
     },
     {
       "key": "fb",
@@ -1096,7 +1113,8 @@ window.dashboardData = {
       "roster": null,
       "manual_adjustment_total": 0,
       "manual_adjustments": [],
-      "guest_slot_override_delta": 0
+      "guest_slot_override_delta": 0,
+      "extra_tickets_total": 0
     }
   ],
   "both_tag": "gia15+fb04",
@@ -1105,6 +1123,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-25T07:40:52.955773+00:00",
-  "last_updated_local": "Thu 25 Jun 2026, 03:40 PM"
+  "last_updated_iso": "2026-06-25T07:52:36.763846+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 03:52 PM"
 };

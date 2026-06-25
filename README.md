@@ -124,6 +124,13 @@ How it works:
 
 Reading the **Booked By / Guest Of / Attendee Type** values requires the script to resolve custom-field IDs; it fetches the location's custom-field definitions automatically each run. If that lookup ever fails, the roster still builds (those columns just come back blank and matching falls back to name).
 
+### Manual seat corrections (when the GHL tags are wrong)
+
+Two per-event config knobs handle attendees the tags can't capture. Both feed the headcount, the dashboard ticket total (shown as a small "+N Extra tickets" pill), and the check-in export, and both are matched to a buyer by email. **Clear them when you roll to the next event.**
+
+- `ticket_overrides` — a buyer who **purchased more tickets than their tag scored** (e.g. bought 2 but tagged as a single). Set the true total: `{ "email": "...", "tickets": 2 }`. The buyer is topped up to that many seats — their row shows the real ticket count and the extra seats appear as "(+1)" rows in the export.
+- `extra_guests` — a **named +1** booked outside the normal flow: `{ "name": "Jane +1", "buyer_email": "..." }`. Attached as a booked guest under that buyer.
+
 ## How the numbers are calculated
 
 **Headline number** on each event card = **tickets sold via Stripe** (sum of quantities across all completed checkouts in the lookback window).

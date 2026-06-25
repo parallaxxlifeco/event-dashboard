@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-15-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 35,
-          "tickets": 35
+          "buyers": 36,
+          "tickets": 36
         },
         {
           "tag": "gia-15-4pack",
@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 52,
-      "buyers_total": 40,
-      "total_paid": 1488.6,
+      "tickets_total": 53,
+      "buyers_total": 41,
+      "total_paid": 1513.6,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -104,9 +104,9 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": true,
-            "tags": "gia-7-buyer, speaker - bali, gia-8-buyer, women, gia-15-buyer, attending-next-event, gia-bali, gia-15-4pack, lead - community signup, member",
+            "tags": "gia-7-buyer, speaker - bali, gia-8-buyer, women, gia-15-buyer, attending-next-event, gia-bali, gia-15-4pack, lead - community signup, member, profile-complete",
             "ghl_contact_id": "DLcbIgaAzuv7vslvANaN",
             "tier": "4-Pack",
             "tickets": 4,
@@ -114,6 +114,36 @@ window.dashboardData = {
             "slot_override": true,
             "slot_override_note": "Speaker (own seat) + 2x 4-pack = 8 guest seats",
             "guests": [
+              {
+                "role": "Guest",
+                "name": "melissa lambour",
+                "email": "me@melissalambour.com",
+                "phone": "+17329863319",
+                "whatsapp": "+17329863319",
+                "attendee_type": "Guest",
+                "booked_by": "hello.gracexuann@gmail.com",
+                "guest_of": "Grace Yeo",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "gia-15-guest, attending-next-event",
+                "ghl_contact_id": "gltynO6isYYIEsGkIBa8"
+              },
+              {
+                "role": "Guest",
+                "name": "karunia maulida",
+                "email": "kapumali97@gmail.com",
+                "phone": "+6285746835900",
+                "whatsapp": "+6285746835900",
+                "attendee_type": "Guest",
+                "booked_by": "hello.gracexuann@gmail.com",
+                "guest_of": "",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "gia-15-guest, attending-next-event",
+                "ghl_contact_id": "Qmp1Ay3lIHlslxKJkK4m"
+              },
               {
                 "role": "Guest",
                 "name": "eli tham",
@@ -139,9 +169,9 @@ window.dashboardData = {
                 "booked_by": "hello.gracexuann@gmail.com",
                 "guest_of": "Grace Yeo",
                 "booked": true,
-                "profile": false,
+                "profile": true,
                 "member": false,
-                "tags": "gia-15-guest, attending-next-event",
+                "tags": "gia-15-guest, attending-next-event, profile-complete",
                 "ghl_contact_id": "77jvHrRhsFryqw3endX4"
               },
               {
@@ -205,7 +235,7 @@ window.dashboardData = {
                 "ghl_contact_id": "umGea69lNnnf60myRe1n"
               }
             ],
-            "open_slots": 2
+            "open_slots": 0
           },
           {
             "role": "Buyer",
@@ -733,9 +763,9 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": true,
-            "tags": "unsubscribed, gia-12-buyer, speaker - bali, gia-14-buyer, lead - community signup, member, gia-15-buyer, attending-next-event",
+            "tags": "unsubscribed, gia-12-buyer, speaker - bali, gia-14-buyer, lead - community signup, member, gia-15-buyer, attending-next-event, profile-complete",
             "ghl_contact_id": "MprWUkAoitmPFb9dCFuZ",
             "tier": "Single",
             "tickets": 1,
@@ -798,6 +828,26 @@ window.dashboardData = {
             "tags": "gia-14-buyer, lead - community signup, member, profile-complete, gia-15-buyer, gia15+fb04, fb04, attending-next-event, women, opted-in newsletter",
             "ghl_contact_id": "Rd38o7YtwpSmza44o9I0",
             "tier": "Bundle (Both Events)",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
+            "name": "pitria yulina",
+            "email": "linna.cahaya@gmail.com",
+            "phone": "+6281239044867",
+            "whatsapp": "+6281239044867",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": false,
+            "tags": "gia-6-buyer, women, gia-15-buyer, attending-next-event",
+            "ghl_contact_id": "D2b6AvxWrh7VCtARaTNP",
+            "tier": "Single",
             "tickets": 1,
             "guest_capacity": 0,
             "guests": [],
@@ -985,10 +1035,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 40,
+        "buyer_count": 41,
         "guest_slots_total": 12,
-        "guests_booked": 10,
-        "headcount": 52,
+        "guests_booked": 12,
+        "headcount": 53,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 5
@@ -1035,6 +1085,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-25T05:09:28.447867+00:00",
-  "last_updated_local": "Thu 25 Jun 2026, 01:09 PM"
+  "last_updated_iso": "2026-06-25T06:18:19.379325+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 02:18 PM"
 };

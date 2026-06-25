@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-15-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 37,
-          "tickets": 37
+          "buyers": 38,
+          "tickets": 38
         },
         {
           "tag": "gia-15-4pack",
@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 55,
-      "buyers_total": 42,
-      "total_paid": 1563.6,
+      "tickets_total": 56,
+      "buyers_total": 43,
+      "total_paid": 1588.6,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -1068,13 +1068,33 @@ window.dashboardData = {
             "guest_capacity": 0,
             "guests": [],
             "open_slots": 0
+          },
+          {
+            "role": "Buyer",
+            "name": "veny lydiawati",
+            "email": "vestudesign@gmail.com",
+            "phone": "+6281380285725",
+            "whatsapp": "+6281380285725",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": true,
+            "tags": "gia-10-buyer, women, gia-15-buyer, attending-next-event, lead - community signup, member",
+            "ghl_contact_id": "Rr3B6oLHOiKkAD1tJDCg",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 42,
+        "buyer_count": 43,
         "guest_slots_total": 13,
         "guests_booked": 13,
-        "headcount": 55,
+        "headcount": 56,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 5
@@ -1123,6 +1143,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-25T07:52:36.763846+00:00",
-  "last_updated_local": "Thu 25 Jun 2026, 03:52 PM"
+  "last_updated_iso": "2026-06-25T08:01:07.572847+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 04:01 PM"
 };

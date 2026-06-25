@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-15-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 36,
-          "tickets": 36
+          "buyers": 37,
+          "tickets": 37
         },
         {
           "tag": "gia-15-4pack",
@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 53,
-      "buyers_total": 41,
-      "total_paid": 1513.6,
+      "tickets_total": 54,
+      "buyers_total": 42,
+      "total_paid": 1538.6,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -170,8 +170,8 @@ window.dashboardData = {
                 "guest_of": "Grace Yeo",
                 "booked": true,
                 "profile": true,
-                "member": false,
-                "tags": "gia-15-guest, attending-next-event, profile-complete",
+                "member": true,
+                "tags": "gia-15-guest, attending-next-event, profile-complete, member",
                 "ghl_contact_id": "77jvHrRhsFryqw3endX4"
               },
               {
@@ -287,9 +287,9 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": true,
-            "tags": "gia-13-buyer, speaker - bali, gia-14-buyer, fb03, women, gia-15-buyer, attending-next-event, lead - community signup, member",
+            "tags": "gia-13-buyer, speaker - bali, gia-14-buyer, fb03, women, gia-15-buyer, attending-next-event, lead - community signup, member, profile-complete",
             "ghl_contact_id": "YBA6sT6WR8LMFTYMKsLf",
             "tier": "Single",
             "tickets": 1,
@@ -308,8 +308,8 @@ window.dashboardData = {
             "guest_of": "",
             "booked": true,
             "profile": true,
-            "member": false,
-            "tags": "profile-complete, gia-15-buyer, attending-next-event",
+            "member": true,
+            "tags": "profile-complete, gia-15-buyer, attending-next-event, member",
             "ghl_contact_id": "B8OgxULT87GBsXaxDCOe",
             "tier": "Single",
             "tickets": 1,
@@ -695,6 +695,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "max greenhalgh",
+            "email": "maxgreenhalgh.work@gmail.com",
+            "phone": "+447473499596",
+            "whatsapp": "+447473499596",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": true,
+            "tags": "gia-15-buyer, attending-next-event, lead - community signup, member",
+            "ghl_contact_id": "GWfvV2FNMU7pQZZ2obHo",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "michelle maukner",
             "email": "mauknermichelle@gmail.com",
             "phone": "+447478950763",
@@ -863,10 +883,10 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": true,
-            "tags": "lead - community signup, member, speaker - bali, gia-14-buyer, gia-15-buyer, attending-next-event",
-            "ghl_contact_id": "bYBJfl7t6gsVKFfQr5yF",
+            "tags": "member, profile-complete, lead - community signup, speaker - bali, gia-14-buyer, gia-15-buyer, attending-next-event",
+            "ghl_contact_id": "ITcKTNMqscUVvET3L9C7",
             "tier": "Single",
             "tickets": 1,
             "guest_capacity": 0,
@@ -1035,10 +1055,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 41,
+        "buyer_count": 42,
         "guest_slots_total": 12,
         "guests_booked": 12,
-        "headcount": 53,
+        "headcount": 54,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 5
@@ -1085,6 +1105,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-25T06:18:19.379325+00:00",
-  "last_updated_local": "Thu 25 Jun 2026, 02:18 PM"
+  "last_updated_iso": "2026-06-25T06:44:05.585323+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 02:44 PM"
 };

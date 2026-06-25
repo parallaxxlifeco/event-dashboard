@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 51,
+      "tickets_total": 52,
       "buyers_total": 40,
-      "total_paid": 1561.6,
+      "total_paid": 1536.6,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -57,8 +57,8 @@ window.dashboardData = {
                 "guest_of": "Amy Schwab",
                 "booked": true,
                 "profile": true,
-                "member": false,
-                "tags": "gia-15-guest, attending-next-event, profile-complete",
+                "member": true,
+                "tags": "gia-15-guest, attending-next-event, profile-complete, member",
                 "ghl_contact_id": "rzo9y9O9T8TgGzmoUxDS"
               },
               {
@@ -116,6 +116,21 @@ window.dashboardData = {
             "guests": [
               {
                 "role": "Guest",
+                "name": "gary sarco",
+                "email": "gary@stellarvoiceagents.com",
+                "phone": "+12403052304",
+                "whatsapp": "+12403052304",
+                "attendee_type": "Guest",
+                "booked_by": "hello.gracexuann@gmail.com",
+                "guest_of": "Grace Yeo",
+                "booked": true,
+                "profile": true,
+                "member": false,
+                "tags": "profile-complete, fb02, attending-next-event, gia-15-guest",
+                "ghl_contact_id": "gnYWngtVbCGCzPkLHl8Q"
+              },
+              {
+                "role": "Guest",
                 "name": "eli tham",
                 "email": "jessiechiang77@gmail.com",
                 "phone": "+19497489629",
@@ -143,21 +158,6 @@ window.dashboardData = {
                 "member": true,
                 "tags": "gia-15-guest, attending-next-event, profile-complete, member",
                 "ghl_contact_id": "umGea69lNnnf60myRe1n"
-              },
-              {
-                "role": "Guest",
-                "name": "gary sarco",
-                "email": "gary.sarco@gmail.com",
-                "phone": "+12403052304",
-                "whatsapp": "+12403052304",
-                "attendee_type": "Guest",
-                "booked_by": "hello.gracexuann@gmail.com",
-                "guest_of": "Grace Yeo",
-                "booked": true,
-                "profile": false,
-                "member": false,
-                "tags": "fb02, gia-15-guest, attending-next-event",
-                "ghl_contact_id": "4dOccRl9PLujeQcgyTRX"
               }
             ],
             "open_slots": 5
@@ -184,7 +184,7 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
-            "name": "brian nathan siegal",
+            "name": "brian siegal",
             "email": "briannathan545@gmail.com",
             "phone": "+17475772791",
             "whatsapp": "+17475772791",
@@ -225,17 +225,17 @@ window.dashboardData = {
           {
             "role": "Buyer",
             "name": "celine nysted",
-            "email": "celine.nysted@hotmail.com",
+            "email": "celine.nysted.co@gmail.com",
             "phone": "+4799355011",
             "whatsapp": "+4799355011",
             "attendee_type": "",
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": false,
-            "tags": "gia-15-buyer, attending-next-event",
-            "ghl_contact_id": "qipQD3MvlYRPkdnknXyC",
+            "tags": "profile-complete, gia-15-buyer, attending-next-event",
+            "ghl_contact_id": "B8OgxULT87GBsXaxDCOe",
             "tier": "Single",
             "tickets": 1,
             "guest_capacity": 0,
@@ -378,8 +378,24 @@ window.dashboardData = {
             "ghl_contact_id": "waXjbqmjmpj4Cp1CxhFu",
             "tier": "Single",
             "tickets": 1,
-            "guest_capacity": 0,
-            "guests": [],
+            "guest_capacity": 1,
+            "guests": [
+              {
+                "role": "Guest",
+                "name": "Farit Surya +1",
+                "email": "",
+                "phone": "",
+                "whatsapp": "",
+                "attendee_type": "",
+                "booked_by": "",
+                "guest_of": "farit surya",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "manual-extra-guest",
+                "ghl_contact_id": ""
+              }
+            ],
             "open_slots": 0
           },
           {
@@ -925,9 +941,9 @@ window.dashboardData = {
         ],
         "unassigned_guests": [],
         "buyer_count": 40,
-        "guest_slots_total": 11,
-        "guests_booked": 6,
-        "headcount": 51,
+        "guest_slots_total": 12,
+        "guests_booked": 7,
+        "headcount": 52,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 5
@@ -974,6 +990,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-25T04:38:27.767568+00:00",
-  "last_updated_local": "Thu 25 Jun 2026, 12:38 PM"
+  "last_updated_iso": "2026-06-25T04:46:45.912885+00:00",
+  "last_updated_local": "Thu 25 Jun 2026, 12:46 PM"
 };

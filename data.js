@@ -193,21 +193,21 @@ window.dashboardData = {
                 "role": "Guest",
                 "name": "gary sarco",
                 "email": "gary.sarco@gmail.com",
-                "phone": "+622402429859",
-                "whatsapp": "+622402429859",
+                "phone": "+12403052304",
+                "whatsapp": "+12403052304",
                 "attendee_type": "Guest",
                 "booked_by": "hello.gracexuann@gmail.com",
                 "guest_of": "Grace Yeo",
                 "booked": true,
                 "profile": true,
                 "member": true,
-                "tags": "profile-complete, fb02, gia-15-guest, member",
+                "tags": "profile-complete, fb02, gia-15-guest, member, fb04",
                 "ghl_contact_id": "gnYWngtVbCGCzPkLHl8Q"
               },
               {
                 "role": "Guest",
                 "name": "jessie chiang",
-                "email": "hello@jessiechiang.com",
+                "email": "jessiechiang77@gmail.com",
                 "phone": "+19497489629",
                 "whatsapp": "+19497489629",
                 "attendee_type": "Guest",
@@ -1114,8 +1114,8 @@ window.dashboardData = {
           "tag": "fb04",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 8,
-          "tickets": 8
+          "buyers": 11,
+          "tickets": 11
         },
         {
           "tag": "fb04+1",
@@ -1126,9 +1126,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 11,
-      "buyers_total": 11,
-      "total_paid": 492.5,
+      "tickets_total": 14,
+      "buyers_total": 14,
+      "total_paid": 558.5,
       "csv": "fb-attendees.csv",
       "roster": null,
       "manual_adjustment_total": 0,
@@ -1143,6 +1143,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-29T02:09:24.956806+00:00",
-  "last_updated_local": "Mon 29 Jun 2026, 10:09 AM"
+  "last_updated_iso": "2026-06-29T11:58:55.336224+00:00",
+  "last_updated_local": "Mon 29 Jun 2026, 07:58 PM"
 };

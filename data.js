@@ -924,8 +924,8 @@ window.dashboardData = {
             "guest_of": "",
             "booked": true,
             "profile": false,
-            "member": false,
-            "tags": "gia-15-buyer",
+            "member": true,
+            "tags": "gia-15-buyer, lead - community signup, member",
             "ghl_contact_id": "sPkRx3yTxKKFH9tdCvmq",
             "tier": "Single",
             "tickets": 1,
@@ -1114,8 +1114,8 @@ window.dashboardData = {
           "tag": "fb04",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 7,
-          "tickets": 7
+          "buyers": 8,
+          "tickets": 8
         },
         {
           "tag": "fb04+1",
@@ -1126,9 +1126,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 3,
-      "tickets_total": 10,
-      "buyers_total": 10,
-      "total_paid": 457.5,
+      "tickets_total": 11,
+      "buyers_total": 11,
+      "total_paid": 492.5,
       "csv": "fb-attendees.csv",
       "roster": null,
       "manual_adjustment_total": 0,
@@ -1143,6 +1143,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-06-28T06:58:25.416035+00:00",
-  "last_updated_local": "Sun 28 Jun 2026, 02:58 PM"
+  "last_updated_iso": "2026-06-29T02:09:24.956806+00:00",
+  "last_updated_local": "Mon 29 Jun 2026, 10:09 AM"
 };

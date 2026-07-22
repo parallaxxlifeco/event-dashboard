@@ -22,7 +22,7 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 0,
-      "tickets_total": 28,
+      "tickets_total": 29,
       "buyers_total": 28,
       "total_paid": 891.05,
       "csv": "gia-attendees.csv",
@@ -263,9 +263,25 @@ window.dashboardData = {
             "tags": "gia-16-buyer, attending-next-event",
             "ghl_contact_id": "XEnRNhosuVFKXQdNdHyP",
             "tier": "Single",
-            "tickets": 1,
-            "guest_capacity": 0,
-            "guests": [],
+            "tickets": 2,
+            "guest_capacity": 1,
+            "guests": [
+              {
+                "role": "Guest",
+                "name": "joshua king (+1)",
+                "email": "",
+                "phone": "",
+                "whatsapp": "",
+                "attendee_type": "",
+                "booked_by": "",
+                "guest_of": "joshua king",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "extra-ticket",
+                "ghl_contact_id": ""
+              }
+            ],
             "open_slots": 0
           },
           {
@@ -591,9 +607,9 @@ window.dashboardData = {
         ],
         "unassigned_guests": [],
         "buyer_count": 28,
-        "guest_slots_total": 0,
-        "guests_booked": 0,
-        "headcount": 28,
+        "guest_slots_total": 1,
+        "guests_booked": 1,
+        "headcount": 29,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 0
@@ -601,7 +617,7 @@ window.dashboardData = {
       "manual_adjustment_total": 0,
       "manual_adjustments": [],
       "guest_slot_override_delta": 0,
-      "extra_tickets_total": 0
+      "extra_tickets_total": 1
     },
     {
       "key": "fb",
@@ -642,6 +658,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-07-22T06:03:54.566848+00:00",
-  "last_updated_local": "Wed 22 Jul 2026, 02:03 PM"
+  "last_updated_iso": "2026-07-22T06:19:50.832271+00:00",
+  "last_updated_local": "Wed 22 Jul 2026, 02:19 PM"
 };

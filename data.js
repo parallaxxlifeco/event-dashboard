@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-16-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 33,
-          "tickets": 33
+          "buyers": 34,
+          "tickets": 34
         },
         {
           "tag": "gia-16-4pack",
@@ -21,10 +21,10 @@ window.dashboardData = {
           "tickets": 0
         }
       ],
-      "both_buyers": 1,
-      "tickets_total": 35,
-      "buyers_total": 34,
-      "total_paid": 1075.55,
+      "both_buyers": 2,
+      "tickets_total": 37,
+      "buyers_total": 36,
+      "total_paid": 1153.55,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -150,6 +150,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "conny hahnkamm",
+            "email": "c.hahnkamm@gmail.com",
+            "phone": "+6281238243585",
+            "whatsapp": "+6281238243585",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": true,
+            "tags": "gia-10-buyer, gia-11-buyer, email bounced, founders_breakfast, lead - community signup, member, fb03, women, gia-16-buyer, attending-next-event",
+            "ghl_contact_id": "P1wiZP5iP9lI1uu2TTUR",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "daria topic",
             "email": "topic.d@hotmail.hu",
             "phone": "+447707968481",
@@ -203,6 +223,26 @@ window.dashboardData = {
             "tags": "gia-2-buyer, gia-7-buyer, reconnected man, gia-16-buyer, attending-next-event, lead - community signup, member, profile-complete",
             "ghl_contact_id": "EpzckhvaDtHA7BBM8ENS",
             "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
+            "name": "elodie koeberl\u00e9",
+            "email": "elodie.koeberle@essec.edu",
+            "phone": "+33625690885",
+            "whatsapp": "+33625690885",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": true,
+            "member": true,
+            "tags": "lead - community signup, member, profile-complete, gia-14-buyer, women, gia16+fb05, fb05, gia-16-buyer, attending-next-event",
+            "ghl_contact_id": "QXJnxoLX3H1kxOn0vKun",
+            "tier": "Bundle (Both Events)",
             "tickets": 1,
             "guest_capacity": 0,
             "guests": [],
@@ -726,10 +766,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 34,
+        "buyer_count": 36,
         "guest_slots_total": 1,
         "guests_booked": 1,
-        "headcount": 35,
+        "headcount": 37,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 0
@@ -760,10 +800,10 @@ window.dashboardData = {
           "tickets": 0
         }
       ],
-      "both_buyers": 1,
-      "tickets_total": 2,
-      "buyers_total": 2,
-      "total_paid": 67.25,
+      "both_buyers": 2,
+      "tickets_total": 3,
+      "buyers_total": 3,
+      "total_paid": 120.25,
       "csv": "fb-attendees.csv",
       "roster": null,
       "manual_adjustment_total": 0,
@@ -773,11 +813,11 @@ window.dashboardData = {
     }
   ],
   "both_tag": "gia16+fb05",
-  "both_count": 1,
-  "both_total_paid": 49.25,
+  "both_count": 2,
+  "both_total_paid": 102.25,
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-07-23T07:20:23.536911+00:00",
-  "last_updated_local": "Thu 23 Jul 2026, 03:20 PM"
+  "last_updated_iso": "2026-07-23T08:01:17.405398+00:00",
+  "last_updated_local": "Thu 23 Jul 2026, 04:01 PM"
 };

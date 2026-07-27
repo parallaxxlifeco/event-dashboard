@@ -24,7 +24,7 @@ window.dashboardData = {
       "both_buyers": 2,
       "tickets_total": 45,
       "buyers_total": 44,
-      "total_paid": 1205.05,
+      "total_paid": 1208.05,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -200,7 +200,7 @@ window.dashboardData = {
             "booked": true,
             "profile": false,
             "member": true,
-            "tags": "gia-10-buyer, gia-11-buyer, email bounced, founders_breakfast, lead - community signup, member, fb03, women, gia-16-buyer",
+            "tags": "gia-10-buyer, gia-11-buyer, email bounced, founders_breakfast, lead - community signup, member, fb03, women, gia-16-buyer, fb05",
             "ghl_contact_id": "P1wiZP5iP9lI1uu2TTUR",
             "tier": "Single",
             "tickets": 1,
@@ -816,7 +816,7 @@ window.dashboardData = {
             "booked": true,
             "profile": false,
             "member": false,
-            "tags": "speaker - bali, email bounced, un-opens last 45 days, gia-8, feedback 2, gia-16-buyer",
+            "tags": "speaker - bali, gia-8, feedback 2, gia-16-buyer, fb05",
             "ghl_contact_id": "G2PlgtpGDcu9gs9OT6IP",
             "tier": "Single",
             "tickets": 1,
@@ -949,8 +949,8 @@ window.dashboardData = {
           "tag": "fb05",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 3,
-          "tickets": 3
+          "buyers": 6,
+          "tickets": 6
         },
         {
           "tag": "fb05+1",
@@ -961,9 +961,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 2,
-      "tickets_total": 7,
-      "buyers_total": 6,
-      "total_paid": 392.75,
+      "tickets_total": 10,
+      "buyers_total": 9,
+      "total_paid": 474.75,
       "csv": "fb-attendees.csv",
       "roster": null,
       "manual_adjustment_total": 0,
@@ -978,6 +978,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-07-27T05:38:49.233187+00:00",
-  "last_updated_local": "Mon 27 Jul 2026, 01:38 PM"
+  "last_updated_iso": "2026-07-27T11:18:38.796752+00:00",
+  "last_updated_local": "Mon 27 Jul 2026, 07:18 PM"
 };

@@ -46,17 +46,17 @@ The dashboard can publish itself to a public web address (e.g. `dashboard.yourdo
 
 1. **Run a refresh once.** Double-click `refresh.command`. A Terminal window opens, runs the script, closes. This creates `data.js`, the three CSVs, and `stripe-cache.json` (which remembers which Stripe products map to which event so future runs are faster).
 2. **Open the dashboard.** Double-click `index.html`. You should see headline numbers, a "Download attendee list" button on each event card, and a bundle row at the bottom. Right-click → Open With → Chrome and pin the tab if you want it permanently open.
-3. **Install the schedule.** Double-click `install-schedule.command`. macOS now wakes the refresh at **08:00 every day**, but it only does the actual pull + publish during the **week leading up to the event** (the 4th Thursday of the month) — outside that window it exits immediately. Sleeping Macs skip scheduled jobs.
+3. **Install the schedule.** Double-click `install-schedule.command`. macOS now wakes the refresh at **08:00 every day**, but it only does the actual pull + publish during the **lead-up window around the events** — outside that window it exits immediately. Sleeping Macs skip scheduled jobs.
 
 ### Refresh schedule (the lead-up window)
 
 The automatic 8am run is gated to the event's lead-up week so it isn't hammering the APIs all month. The window is controlled in `config.json` under `schedule`:
 
 - `window_enabled` — `true` to limit to the lead-up week, `false` to run every day at 8am.
-- `days_before` — how many days before the event the window opens. `6` means the 7 days up to and including the event (opens the prior Friday).
+- `days_before` — how many days before the **earliest** event the window opens. `6` means it opens the prior Friday; the window then runs through the **latest** event date.
 - `include_event_day` — `true` keeps refreshing the morning of the event; `false` stops the day before.
 
-The event date is computed automatically as the **4th Thursday of the current month**, so you don't have to touch the schedule each month. A **manual** `refresh.command` always runs regardless of the window, so you can force an update any time.
+The window is derived from the `date` fields of your events: it opens `days_before` days before the **earliest** event and closes on the **latest** event date. So it automatically tracks whatever dates you set each cycle — no assumption about which Thursday, and it covers both GIVE IT ALL and Founders Breakfast even when they fall in the same week. A **manual** `refresh.command` always runs regardless of the window, so you can force an update any time.
 
 ## Each month — when the event details change
 

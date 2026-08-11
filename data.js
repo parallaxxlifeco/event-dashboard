@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-17-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 18,
-          "tickets": 18
+          "buyers": 16,
+          "tickets": 16
         },
         {
           "tag": "gia-17-4pack",
@@ -21,7 +21,7 @@ window.dashboardData = {
           "tickets": 0
         }
       ],
-      "both_buyers": 0,
+      "both_buyers": 2,
       "tickets_total": 18,
       "buyers_total": 18,
       "total_paid": 920.0,
@@ -202,7 +202,7 @@ window.dashboardData = {
             "member": true,
             "tags": "gia-12-buyer, founders_breakfast, speaker - bali, gia-13-buyer, fb02, lead - community signup, member, gia-14-buyer, fb03, gia15+fb04, gia-15-buyer, fb04, fb05, gia-16-buyer, gia17+fb06, fb06, gia-17-buyer, attending-next-event",
             "ghl_contact_id": "jqAxFdk7W7YxEZvX7gGh",
-            "tier": "Single",
+            "tier": "Bundle (Both Events)",
             "tickets": 1,
             "guest_capacity": 0,
             "guests": [],
@@ -322,7 +322,7 @@ window.dashboardData = {
             "member": false,
             "tags": "gia-11-buyer, gia-13-buyer, gia+founders_breakfast, speaker - bali, gia-16-buyer, fb05, gia17+fb06, fb06, gia-17-buyer, attending-next-event",
             "ghl_contact_id": "1PNOEwhVyr7dJ3BmB50c",
-            "tier": "Single",
+            "tier": "Bundle (Both Events)",
             "tickets": 1,
             "guest_capacity": 0,
             "guests": [],
@@ -407,27 +407,27 @@ window.dashboardData = {
       "key": "fb",
       "name": "Founders Breakfast",
       "date": "2026-08-25",
-      "tag": "fb05",
+      "tag": "fb06",
       "tiers": [
         {
-          "tag": "fb05",
+          "tag": "fb06",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 8,
-          "tickets": 8
+          "buyers": 1,
+          "tickets": 1
         },
         {
-          "tag": "fb05+1",
+          "tag": "fb06+1",
           "label": "+1 (2 tickets)",
           "tickets_per_contact": 2,
-          "buyers": 1,
-          "tickets": 2
+          "buyers": 0,
+          "tickets": 0
         }
       ],
-      "both_buyers": 0,
-      "tickets_total": 10,
-      "buyers_total": 9,
-      "total_paid": 419.75,
+      "both_buyers": 2,
+      "tickets_total": 3,
+      "buyers_total": 3,
+      "total_paid": 425.0,
       "csv": "fb-attendees.csv",
       "roster": null,
       "manual_adjustment_total": 0,
@@ -436,12 +436,12 @@ window.dashboardData = {
       "extra_tickets_total": 0
     }
   ],
-  "both_tag": "gia17+fb05",
-  "both_count": 0,
-  "both_total_paid": 0,
+  "both_tag": "gia17+fb06",
+  "both_count": 2,
+  "both_total_paid": 126.0,
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-08-11T02:25:33.744066+00:00",
-  "last_updated_local": "Tue 11 Aug 2026, 10:25 AM"
+  "last_updated_iso": "2026-08-11T02:27:54.836348+00:00",
+  "last_updated_local": "Tue 11 Aug 2026, 10:27 AM"
 };

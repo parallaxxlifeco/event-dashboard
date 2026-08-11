@@ -22,7 +22,7 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 2,
-      "tickets_total": 18,
+      "tickets_total": 20,
       "buyers_total": 18,
       "total_paid": 920.0,
       "csv": "gia-attendees.csv",
@@ -203,9 +203,25 @@ window.dashboardData = {
             "tags": "gia-12-buyer, founders_breakfast, speaker - bali, gia-13-buyer, fb02, lead - community signup, member, gia-14-buyer, fb03, gia15+fb04, gia-15-buyer, fb04, fb05, gia-16-buyer, gia17+fb06, fb06, gia-17-buyer, attending-next-event",
             "ghl_contact_id": "jqAxFdk7W7YxEZvX7gGh",
             "tier": "Bundle (Both Events)",
-            "tickets": 1,
-            "guest_capacity": 0,
-            "guests": [],
+            "tickets": 2,
+            "guest_capacity": 1,
+            "guests": [
+              {
+                "role": "Guest",
+                "name": "job baltes (+1)",
+                "email": "",
+                "phone": "",
+                "whatsapp": "",
+                "attendee_type": "",
+                "booked_by": "",
+                "guest_of": "job baltes",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "extra-ticket",
+                "ghl_contact_id": ""
+              }
+            ],
             "open_slots": 0
           },
           {
@@ -223,9 +239,25 @@ window.dashboardData = {
             "tags": "gia-17-buyer",
             "ghl_contact_id": "XEnRNhosuVFKXQdNdHyP",
             "tier": "Single",
-            "tickets": 1,
-            "guest_capacity": 0,
-            "guests": [],
+            "tickets": 2,
+            "guest_capacity": 1,
+            "guests": [
+              {
+                "role": "Guest",
+                "name": "joshua king (+1)",
+                "email": "",
+                "phone": "",
+                "whatsapp": "",
+                "attendee_type": "",
+                "booked_by": "",
+                "guest_of": "joshua king",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "extra-ticket",
+                "ghl_contact_id": ""
+              }
+            ],
             "open_slots": 0
           },
           {
@@ -391,9 +423,9 @@ window.dashboardData = {
         ],
         "unassigned_guests": [],
         "buyer_count": 18,
-        "guest_slots_total": 0,
-        "guests_booked": 0,
-        "headcount": 18,
+        "guest_slots_total": 2,
+        "guests_booked": 2,
+        "headcount": 20,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 0
@@ -401,7 +433,7 @@ window.dashboardData = {
       "manual_adjustment_total": 0,
       "manual_adjustments": [],
       "guest_slot_override_delta": 0,
-      "extra_tickets_total": 0
+      "extra_tickets_total": 2
     },
     {
       "key": "fb",
@@ -442,6 +474,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-08-11T02:27:54.836348+00:00",
-  "last_updated_local": "Tue 11 Aug 2026, 10:27 AM"
+  "last_updated_iso": "2026-08-11T02:37:07.816698+00:00",
+  "last_updated_local": "Tue 11 Aug 2026, 10:37 AM"
 };

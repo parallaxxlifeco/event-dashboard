@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-17-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 22,
-          "tickets": 22
+          "buyers": 24,
+          "tickets": 24
         },
         {
           "tag": "gia-17-4pack",
@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 5,
-      "tickets_total": 29,
-      "buyers_total": 27,
-      "total_paid": 1204.0,
+      "tickets_total": 30,
+      "buyers_total": 29,
+      "total_paid": 1254.0,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -170,6 +170,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "felipe zuniga",
+            "email": "felipegelatopastry@gmail.com",
+            "phone": "+393515552450",
+            "whatsapp": "+393515552450",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": true,
+            "tags": "gia-17-buyer, attending-next-event, lead - community signup, member",
+            "ghl_contact_id": "lWlqvA6WYdS3jm7VrlIb",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "fil biggs",
             "email": "fil@live.co.uk",
             "phone": "+447988936437",
@@ -182,6 +202,26 @@ window.dashboardData = {
             "member": false,
             "tags": "gia-8-buyer, gia-9-buyer, archetypequizcompleted, archetype_intellectualdefender, mens work, speaker - bali, gia-10-buyer, gia-17-buyer, attending-next-event",
             "ghl_contact_id": "fXGrShe6XffebqQyeouT",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
+            "name": "hannah whelan",
+            "email": "hannahwhelan4@gmail.com",
+            "phone": "+353868634541",
+            "whatsapp": "+353868634541",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": true,
+            "tags": "gia-14-buyer, lead - community signup, member, women, gia-17-buyer",
+            "ghl_contact_id": "qcu5wC8VdJkQr2sByeaO",
             "tier": "Single",
             "tickets": 1,
             "guest_capacity": 0,
@@ -243,25 +283,9 @@ window.dashboardData = {
             "tags": "gia-12-buyer, founders_breakfast, speaker - bali, gia-13-buyer, fb02, lead - community signup, member, gia-14-buyer, fb03, gia15+fb04, gia-15-buyer, fb04, fb05, gia-16-buyer, gia17+fb06, fb06, gia-17-buyer, attending-next-event",
             "ghl_contact_id": "jqAxFdk7W7YxEZvX7gGh",
             "tier": "Bundle (Both Events)",
-            "tickets": 2,
-            "guest_capacity": 1,
-            "guests": [
-              {
-                "role": "Guest",
-                "name": "job baltes (+1)",
-                "email": "",
-                "phone": "",
-                "whatsapp": "",
-                "attendee_type": "",
-                "booked_by": "",
-                "guest_of": "job baltes",
-                "booked": true,
-                "profile": false,
-                "member": false,
-                "tags": "extra-ticket",
-                "ghl_contact_id": ""
-              }
-            ],
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
             "open_slots": 0
           },
           {
@@ -490,9 +514,9 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
-            "member": false,
-            "tags": "gia-11-buyer, gia-13-buyer, gia+founders_breakfast, speaker - bali, gia-16-buyer, fb05, gia17+fb06, fb06, gia-17-buyer, attending-next-event",
+            "profile": true,
+            "member": true,
+            "tags": "gia-11-buyer, gia-13-buyer, gia+founders_breakfast, speaker - bali, gia-16-buyer, fb05, gia17+fb06, fb06, gia-17-buyer, attending-next-event, lead - community signup, member, profile-complete",
             "ghl_contact_id": "1PNOEwhVyr7dJ3BmB50c",
             "tier": "Bundle (Both Events)",
             "tickets": 1,
@@ -591,8 +615,8 @@ window.dashboardData = {
             "guest_of": "",
             "booked": true,
             "profile": false,
-            "member": false,
-            "tags": "gia-13-buyer, speaker - bali, gia-17-buyer, attending-next-event",
+            "member": true,
+            "tags": "gia-13-buyer, speaker - bali, gia-17-buyer, attending-next-event, lead - community signup, member",
             "ghl_contact_id": "k5X2tkhzmjrj1OWIEL2Z",
             "tier": "Single",
             "tickets": 1,
@@ -602,10 +626,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 27,
-        "guest_slots_total": 2,
-        "guests_booked": 2,
-        "headcount": 29,
+        "buyer_count": 29,
+        "guest_slots_total": 1,
+        "guests_booked": 1,
+        "headcount": 30,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 0
@@ -613,7 +637,7 @@ window.dashboardData = {
       "manual_adjustment_total": 0,
       "manual_adjustments": [],
       "guest_slot_override_delta": 0,
-      "extra_tickets_total": 2
+      "extra_tickets_total": 1
     },
     {
       "key": "fb",
@@ -653,9 +677,7 @@ window.dashboardData = {
   "both_total_paid": 285.0,
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
-  "errors": [
-    "GHL contacts/search for tag 'gia-17-guest' failed: HTTP 401 from https://services.leadconnectorhq.com/contacts/search: {\"statusCode\":401,\"message\":\"Command timed out\"}"
-  ],
-  "last_updated_iso": "2026-08-17T03:01:05.709155+00:00",
-  "last_updated_local": "Mon 17 Aug 2026, 11:01 AM"
+  "errors": [],
+  "last_updated_iso": "2026-08-17T04:18:13.199416+00:00",
+  "last_updated_local": "Mon 17 Aug 2026, 12:18 PM"
 };

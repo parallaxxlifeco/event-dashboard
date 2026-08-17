@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-17-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 20,
-          "tickets": 20
+          "buyers": 22,
+          "tickets": 22
         },
         {
           "tag": "gia-17-4pack",
@@ -21,10 +21,10 @@ window.dashboardData = {
           "tickets": 0
         }
       ],
-      "both_buyers": 4,
-      "tickets_total": 26,
-      "buyers_total": 24,
-      "total_paid": 1126.0,
+      "both_buyers": 5,
+      "tickets_total": 29,
+      "buyers_total": 27,
+      "total_paid": 1204.0,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -390,11 +390,31 @@ window.dashboardData = {
             "booked_by": "",
             "guest_of": "",
             "booked": true,
-            "profile": false,
+            "profile": true,
             "member": true,
-            "tags": "fb05, speaker - bali, gia-17-buyer, attending-next-event, lead - community signup, member",
+            "tags": "fb05, speaker - bali, gia-17-buyer, attending-next-event, lead - community signup, member, profile-complete",
             "ghl_contact_id": "LcaMG3ZLVdAEUfLFXnwN",
             "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
+            "name": "leonie erenstein",
+            "email": "hello@thelovelab.nl",
+            "phone": "+31614581864",
+            "whatsapp": "+31614581864",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": true,
+            "member": true,
+            "tags": "speaker - bali, gia-14-buyer, lead - community signup, member, profile-complete, women, gia17+fb06, fb06, gia-17-buyer, attending-next-event",
+            "ghl_contact_id": "HlWwAd4qFGPymxpBnZLd",
+            "tier": "Bundle (Both Events)",
             "tickets": 1,
             "guest_capacity": 0,
             "guests": [],
@@ -414,6 +434,26 @@ window.dashboardData = {
             "member": false,
             "tags": "gia-7-buyer, fb06, gia-17-buyer, attending-next-event, speaker - bali",
             "ghl_contact_id": "uCnZL77Juw2krauYvXMU",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
+            "name": "mai kamouni",
+            "email": "maikamouni@gmail.com",
+            "phone": "+6282313556146",
+            "whatsapp": "+6282313556146",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": true,
+            "member": true,
+            "tags": "gia-17-buyer, attending-next-event, lead - community signup, member, profile-complete",
+            "ghl_contact_id": "wwKANxJCHndmSjAE652z",
             "tier": "Single",
             "tickets": 1,
             "guest_capacity": 0,
@@ -522,6 +562,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "sim khela",
+            "email": "sim@excellenceconsulting.co",
+            "phone": "+6281239363759",
+            "whatsapp": "+6281239363759",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": false,
+            "tags": "gia-17-buyer, attending-next-event, fb06",
+            "ghl_contact_id": "FQBGoLf1QZGxl21k7Uc4",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "zac spowart",
             "email": "hello@zacspowart.com",
             "phone": "+13108667935",
@@ -542,10 +602,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 24,
+        "buyer_count": 27,
         "guest_slots_total": 2,
         "guests_booked": 2,
-        "headcount": 26,
+        "headcount": 29,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 0
@@ -565,8 +625,8 @@ window.dashboardData = {
           "tag": "fb06",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 1,
-          "tickets": 1
+          "buyers": 2,
+          "tickets": 2
         },
         {
           "tag": "fb06+1",
@@ -576,10 +636,10 @@ window.dashboardData = {
           "tickets": 0
         }
       ],
-      "both_buyers": 4,
-      "tickets_total": 5,
-      "buyers_total": 5,
-      "total_paid": 531.0,
+      "both_buyers": 5,
+      "tickets_total": 7,
+      "buyers_total": 7,
+      "total_paid": 584.0,
       "csv": "fb-attendees.csv",
       "roster": null,
       "manual_adjustment_total": 0,
@@ -589,11 +649,13 @@ window.dashboardData = {
     }
   ],
   "both_tag": "gia17+fb06",
-  "both_count": 4,
-  "both_total_paid": 232.0,
+  "both_count": 5,
+  "both_total_paid": 285.0,
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
-  "errors": [],
-  "last_updated_iso": "2026-08-15T11:37:42.442983+00:00",
-  "last_updated_local": "Sat 15 Aug 2026, 07:37 PM"
+  "errors": [
+    "GHL contacts/search for tag 'gia-17-guest' failed: HTTP 401 from https://services.leadconnectorhq.com/contacts/search: {\"statusCode\":401,\"message\":\"Command timed out\"}"
+  ],
+  "last_updated_iso": "2026-08-17T03:01:05.709155+00:00",
+  "last_updated_local": "Mon 17 Aug 2026, 11:01 AM"
 };

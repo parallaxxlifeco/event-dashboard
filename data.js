@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-17-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 27,
-          "tickets": 27
+          "buyers": 30,
+          "tickets": 30
         },
         {
           "tag": "gia-17-4pack",
@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 5,
-      "tickets_total": 33,
-      "buyers_total": 32,
-      "total_paid": 1354.0,
+      "tickets_total": 36,
+      "buyers_total": 35,
+      "total_paid": 1425.0,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -59,8 +59,8 @@ window.dashboardData = {
             "guest_of": "",
             "booked": true,
             "profile": false,
-            "member": false,
-            "tags": "gia-17-buyer, attending-next-event",
+            "member": true,
+            "tags": "gia-17-buyer, attending-next-event, lead - community signup, member",
             "ghl_contact_id": "gaJqTF6KxcblmZBlCArU",
             "tier": "Single",
             "tickets": 1,
@@ -150,6 +150,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "camila santiago",
+            "email": "camilapsantiago@gmail.com",
+            "phone": "+6281237890683",
+            "whatsapp": "+6281237890683",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": true,
+            "member": true,
+            "tags": "gia-5-buyer, women, lead - community signup, member, gia-17-buyer, attending-next-event, profile-complete",
+            "ghl_contact_id": "L6uzIjYv8h7ruQahk2vp",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "chris howard",
             "email": "ceobrandnew@gmail.com",
             "phone": "+14246537436",
@@ -202,6 +222,26 @@ window.dashboardData = {
             "member": false,
             "tags": "gia-17-buyer, attending-next-event",
             "ghl_contact_id": "tgAWt6m01gq51gu5BYGz",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
+            "name": "dustin rivet",
+            "email": "dustinrivet@gmail.com",
+            "phone": "+94741232893",
+            "whatsapp": "+94741232893",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": true,
+            "member": true,
+            "tags": "gia-2-buyer, gia-7-buyer, reconnected man, gia-16-buyer, lead - community signup, member, profile-complete, gia-17-buyer, attending-next-event",
+            "ghl_contact_id": "EpzckhvaDtHA7BBM8ENS",
             "tier": "Single",
             "tickets": 1,
             "guest_capacity": 0,
@@ -626,6 +666,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "sarah simpson",
+            "email": "siycoaching.co@gmail.com",
+            "phone": "+17747225544",
+            "whatsapp": "+17747225544",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": false,
+            "tags": "speaker - bali, gia-10-buyer, gia-11-buyer, founders_breakfast, gia-12-buyer, fb02, gia-13-buyer, women, gia-17-buyer, attending-next-event",
+            "ghl_contact_id": "JxhmA3v1vW51aViDNBYh",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "savina nikolova",
             "email": "savinanikolova@icloud.com",
             "phone": "+447904483695",
@@ -686,10 +746,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 32,
+        "buyer_count": 35,
         "guest_slots_total": 1,
         "guests_booked": 1,
-        "headcount": 33,
+        "headcount": 36,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 0
@@ -738,6 +798,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-08-18T03:40:06.424533+00:00",
-  "last_updated_local": "Tue 18 Aug 2026, 11:40 AM"
+  "last_updated_iso": "2026-08-18T12:29:32.957315+00:00",
+  "last_updated_local": "Tue 18 Aug 2026, 08:29 PM"
 };

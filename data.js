@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-17-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 30,
-          "tickets": 30
+          "buyers": 32,
+          "tickets": 32
         },
         {
           "tag": "gia-17-4pack",
@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 5,
-      "tickets_total": 36,
-      "buyers_total": 35,
-      "total_paid": 1425.0,
+      "tickets_total": 38,
+      "buyers_total": 37,
+      "total_paid": 1475.0,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -370,6 +370,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "jordi mar\u00edn valle",
+            "email": "jmv.jordi@gmail.com",
+            "phone": "+34630615757",
+            "whatsapp": "+34630615757",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": true,
+            "member": true,
+            "tags": "gia-6-buyer, fulfillment alignment, speaker - bali, gia-8-buyer, gia-9-buyer, archetypequizcompleted, archetype_freedomfortress, mens work, reconnected man, gia-10-buyer, feedback received, founders_breakfast, gia-12-buyer, gia-13-buyer, member, profile-complete, gia-14-buyer, gia-15-buyer, gia-17-buyer, attending-next-event",
+            "ghl_contact_id": "0TbaMhgiEPT0fkSoLRSn",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "joshua king",
             "email": "joshdavidking@gmail.com",
             "phone": "+14694149232",
@@ -666,6 +686,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "renee lim",
+            "email": "renee5sarah@gmail.com",
+            "phone": "+61400244963",
+            "whatsapp": "+61400244963",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": false,
+            "member": false,
+            "tags": "speaker - bali, gia-5-buyer, gia-8-buyer, gia-9-buyer, feedback 2, women, gia-17-buyer, attending-next-event",
+            "ghl_contact_id": "NinT5ubAovDX9qQEkIFa",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "sarah simpson",
             "email": "siycoaching.co@gmail.com",
             "phone": "+17747225544",
@@ -746,10 +786,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 35,
+        "buyer_count": 37,
         "guest_slots_total": 1,
         "guests_booked": 1,
-        "headcount": 36,
+        "headcount": 38,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 0
@@ -798,6 +838,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-08-18T12:29:32.957315+00:00",
-  "last_updated_local": "Tue 18 Aug 2026, 08:29 PM"
+  "last_updated_iso": "2026-08-19T04:16:21.376063+00:00",
+  "last_updated_local": "Wed 19 Aug 2026, 12:16 PM"
 };

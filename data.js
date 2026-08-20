@@ -10,8 +10,8 @@ window.dashboardData = {
           "tag": "gia-17-buyer",
           "label": "Single",
           "tickets_per_contact": 1,
-          "buyers": 35,
-          "tickets": 35
+          "buyers": 36,
+          "tickets": 36
         },
         {
           "tag": "gia-17-4pack",
@@ -22,9 +22,9 @@ window.dashboardData = {
         }
       ],
       "both_buyers": 6,
-      "tickets_total": 42,
-      "buyers_total": 41,
-      "total_paid": 1628.0,
+      "tickets_total": 44,
+      "buyers_total": 42,
+      "total_paid": 1733.0,
       "csv": "gia-attendees.csv",
       "roster": {
         "buyers": [
@@ -203,9 +203,25 @@ window.dashboardData = {
             "tags": "gia-17-buyer, attending-next-event",
             "ghl_contact_id": "1YaP3lJHiZswHuR4xVN2",
             "tier": "Single",
-            "tickets": 1,
-            "guest_capacity": 0,
-            "guests": [],
+            "tickets": 2,
+            "guest_capacity": 1,
+            "guests": [
+              {
+                "role": "Guest",
+                "name": "chris diggle (+1)",
+                "email": "",
+                "phone": "",
+                "whatsapp": "",
+                "attendee_type": "",
+                "booked_by": "",
+                "guest_of": "chris diggle",
+                "booked": true,
+                "profile": false,
+                "member": false,
+                "tags": "extra-ticket",
+                "ghl_contact_id": ""
+              }
+            ],
             "open_slots": 0
           },
           {
@@ -766,6 +782,26 @@ window.dashboardData = {
           },
           {
             "role": "Buyer",
+            "name": "rich nelson",
+            "email": "truetargetcoaching@gmail.com",
+            "phone": "+61431096112",
+            "whatsapp": "+61431096112",
+            "attendee_type": "",
+            "booked_by": "",
+            "guest_of": "",
+            "booked": true,
+            "profile": true,
+            "member": true,
+            "tags": "gia-14-buyer, fb03, lead - community signup, member, profile-complete, gia-17-buyer, attending-next-event",
+            "ghl_contact_id": "tgn0AdKe8U3dmwRiRJQf",
+            "tier": "Single",
+            "tickets": 1,
+            "guest_capacity": 0,
+            "guests": [],
+            "open_slots": 0
+          },
+          {
+            "role": "Buyer",
             "name": "robert hangu",
             "email": "robert@nextops.agency",
             "phone": "+34602441540",
@@ -866,10 +902,10 @@ window.dashboardData = {
           }
         ],
         "unassigned_guests": [],
-        "buyer_count": 41,
-        "guest_slots_total": 1,
-        "guests_booked": 1,
-        "headcount": 42,
+        "buyer_count": 42,
+        "guest_slots_total": 2,
+        "guests_booked": 2,
+        "headcount": 44,
         "manual_adjustment_total": 0,
         "manual_adjustments": [],
         "override_delta": 0
@@ -877,7 +913,7 @@ window.dashboardData = {
       "manual_adjustment_total": 0,
       "manual_adjustments": [],
       "guest_slot_override_delta": 0,
-      "extra_tickets_total": 1
+      "extra_tickets_total": 2
     },
     {
       "key": "fb",
@@ -918,6 +954,6 @@ window.dashboardData = {
   "both_csv": "both-events.csv",
   "stripe_enabled": true,
   "errors": [],
-  "last_updated_iso": "2026-08-20T03:33:42.727971+00:00",
-  "last_updated_local": "Thu 20 Aug 2026, 11:33 AM"
+  "last_updated_iso": "2026-08-20T04:00:12.273159+00:00",
+  "last_updated_local": "Thu 20 Aug 2026, 12:00 PM"
 };
